@@ -1,0 +1,7 @@
+cmake \
+ -DCMAKE_INSTALL_PREFIX=$HOME/Softwares/hdf5-1.12.2/ \
+ -DHDF5_BUILD_FORTRAN=YES -DHDF5_BUILD_HL_LIB=YES \
+ -DHDF5_ENABLE_PARALLEL=YES \
+ ..
+make -j 4
+make install
